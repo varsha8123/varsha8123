@@ -1,0 +1,853 @@
+body {
+  font-family:verdana, Arial, Helvetica, sans-serif;
+  color:#252525;
+}
+
+.container{
+  width: 100%;
+  display:block;
+}
+
+/* Clear floats after the columns */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*************************Header section start here ************************************/
+
+
+/* Style the header with a background and some padding */
+
+.header-area {
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #ffffff;
+  padding: 10px 10px;
+}
+
+/* Style the header links */
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+/* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+/* Float the link section to the right */
+.header-right {
+  float: right;
+}
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .header-right {
+    float: none;
+  }
+}
+
+/*************************Header section ends here ************************************/
+
+
+/*************************Navigation section start here ************************************/
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background: #5fa208 url("../images/navBar_bg.png") repeat-x center;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background: #6fc202;
+  color: #ffffff;
+}
+
+/* Add a color to the active/current link */
+
+.topnav a:active{
+  background: #6fc202;
+  padding: 20px 30px;
+  color: #ffffff;
+}
+
+.topnav .icon {
+  display: none;
+}
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: right;
+    display: block;
+    text-align: left;
+  }
+  .topnav a:active{
+    background: #6fc202;
+    padding: 20px 30px;
+    color: #ffffff;
+  }
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 30px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown .dropbtn:hover {
+  background-color: #6fc202;
+  color: #ffffff;
+}
+
+.show {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #6fc202;
+  min-width: 100px;
+  box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #ffffff;
+  padding: 14px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #5fa208;
+  color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/*************************Navigation section end here ************************************/
+
+
+/*************************headerCarousel section start here *******************************/
+
+.scrollerArea{
+  background: #ffffff;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  width:100%;
+  height:445px;
+  overflow:hidden;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+  width: 98%;
+}
+
+/****************headerCarousel section end here *******************************/
+
+
+/*************************imageArea section start here *******************************/
+
+.imageArea{
+  background: #ffffff;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  width:100%;
+  height:300px;
+  overflow:hidden;
+}
+
+/****************************imageArea section end here *******************************/
+
+/*************************Navigation section end here ************************************/
+
+
+/*************************Service section start here ************************************/
+
+.serviceArea {
+  //background: #efefef;
+  padding: 20px 20px;
+  color:#252525;
+  //float:left;
+  width:97.5%;
+  display:block;
+}
+
+/* Clear floats before the columns */
+.serviceArea:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+.serviceDetail{
+  background: #ffffff;
+  margin: 20px 15px;
+  padding: 20px 20px;
+  box-shadow:5px 5px 15px rgba(5, 5, 5, 0.24);
+  width:20%;
+  float:left;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.serviceDetail{
+	  margin: 20px 5px;
+	  padding: 10px 10px;
+	}
+
+	.serviceDetail.icon {
+	  margin:10px 10px;
+	  width:100%;
+	  text-align:center;
+	}
+
+	.serviceArea .serviceDetail.icon {
+	  color: #252525;
+	}
+}
+
+.serviceArea .serviceDetail h3 {
+	font-size: 20px;
+	text-align:center;
+}
+
+.bioChe{
+  background:url("../images/bioChe.png") no-repeat center;
+  height:80px;
+}
+
+.metaBol{
+  background:url("../images/metaBol.png") no-repeat center;
+  height:80px;
+}
+
+.molGen{
+  background:url("../images/molGen.png") no-repeat center;
+  height:80px;
+}
+
+.bioAna{
+  background:url("../images/bioAna.png") no-repeat center;
+  height:80px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .serviceArea .serviceDetail h3 {
+    font-size: 20px;
+  }
+}
+
+.serviceDetail p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #252525;
+  margin:10px 0px 26px 0px;
+  float:left;
+  height:100px;
+}
+
+.bdrBlu{
+  border-bottom:4px solid #0875B6;
+}
+
+.bdrPur{
+  border-bottom:4px solid #A764A9;
+}
+
+.bdrGre{
+  border-bottom:4px solid #5fa208;
+}
+
+.bdrYel{
+  border-bottom:4px solid #E8B13C;
+}
+	
+@media (min-width: 768px) and (max-width: 991px) {
+  .serviceArea .serviceDetail{
+    padding: 5px 10px;
+  }
+}
+
+.serviceBtn{
+  text-align:center;
+  width:100%;
+  clear:both;
+}
+.bBtn{
+  box-shadow:3px 3px 3px rgba(5, 5, 5, 0.30);
+  border:1px solid #0875B6;
+  border-radius:10px 10px;
+  background-color:#0875B6;
+  color:#ffffff;
+  padding:10px 25px;
+}
+.pBtn{
+  box-shadow:3px 3px 3px rgba(5, 5, 5, 0.30);
+  border:1px solid #A764A9;
+  border-radius:10px 10px;
+  background-color:#A764A9;
+  color:#ffffff;
+  padding:10px 25px;
+}
+.gBtn{
+  box-shadow:3px 3px 3px rgba(5, 5, 5, 0.30);
+  border:1px solid #5fa208;
+  border-radius:10px 10px;
+  background-color:#5fa208;
+  color:#ffffff;
+  padding:10px 25px;
+}
+.yBtn{
+  box-shadow:3px 3px 3px rgba(5, 5, 5, 0.30);
+  border:1px solid #E8B13C;
+  border-radius:10px 10px;
+  background-color:#E8B13C;
+  color:#ffffff;
+  padding:10px 25px;
+}
+
+/*************************Service section end here ************************************/
+
+
+/*************************testimonialArea section start here **************************/
+.testimArea {
+	background:#ececec;
+	padding: 20px 0px;
+	color:#252525;
+	//float:left;
+	width:100%;
+	display:block;
+	position: relative;
+}
+
+h2 {
+	color: #0875B6;
+	text-align: center;
+	font-weight: bold;
+	position: relative;
+	margin: 20px 0 60px;
+}
+h2::after {
+	content: "";
+	width: 150px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: #0875B6;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin:20px auto 20px auto;
+	padding:0 70px;
+	position:relative;
+	//float:left;
+}
+.carousel .item {
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 200px;
+	width: 25%;
+    float: left;
+	background:#f0f0f0;
+    border: 1px solid #ffffff;
+	padding:20px 20px;
+	margin:0px 20px 20px 20px;
+	position:relative;
+}
+.carousel .item .img-box {
+	width: 100px;
+	height: 100px;
+	margin: 0px auto 0px auto;
+	padding: 5px;
+	background:#ffffff;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	position:absolute;
+	top:-20%;
+	left:35%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	//border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+	font-style: italic;
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: #7AA641;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+/*************************testimonialArea section end here ********************************/
+
+/*************************recogArea section start here ************************************/
+
+.recogArea{
+  background: #2588c9 url("../images/footerBg.png") center no-repeat ;
+  padding: 20px 20px;
+  font:#252525;
+  float:left;
+  width:97.5%;
+  display:block;
+  height:128px;
+}
+.recogArea_col{
+  color: #252525;
+  margin:10px 10px;
+  text-align:center;
+  width: 23%;
+  float: left;
+  text-align:center;
+}
+
+/*************************recogArea section end here ************************************/
+
+/*************************Footer section start here ************************************/
+
+.footerArea{
+  background: #ececec;
+  padding: 0px 0px;
+  font-color:#252525;
+  float:left;
+  width:100%;
+}
+
+.footerBg{
+  background: #033c68;
+  font:#cdcdcd;
+  float:left;
+  clear: both;
+  width:100%;
+}
+
+.footer_col{
+  float:left;
+  //height:300px;
+  margin:5px 24px;
+  width:30%;
+}
+
+.footer_col h4{	
+  font-size: 14px;
+  color: #cdcdcd;
+  text-transform:uppercase;
+}
+
+.footer_col p{	
+  font-size: 12px;
+  line-height:20px;
+  color: #cdcdcd;
+  padding:0px 0px;
+}
+
+.footer_col a{
+  text-decoration:none;
+  float:left;
+  color:#cdcdcd;
+  width:80%;
+  padding:10px 0px;
+}
+
+.footer_col a:hover{
+  text-decoration:underline;
+}
+
+.footer_col input, .footer_col textarea{
+  background:#023761;
+  border:none;
+  color:#cdcdcd;
+  padding:10px 5px;
+  width:78%;
+  margin:5px 0px;
+}
+
+.footerBtn{
+  background:#5fa208;
+  border:none;
+  color:#ffffff;
+  padding:15px 10px;
+  width:80%;
+  font-weight:bold;
+  margin:10px 0px;
+  font-size:16px;
+}
+
+.footerText_br{
+  height:1px;#003660;
+  margin:5px 0px;
+  clear:both;
+}
+
+.footerText{
+  font-size: 12px;
+  padding: 10px 20px;
+  text-align: center;
+  clear:both;
+}
+
+.footerText p{
+  font-size: 12px;
+}
+
+.footerText a{
+  text-decoration:none;
+  color:#8B9DAB;
+}
+
+.footerText a:hover{
+  text-decoration:underline;
+}
+/*************************Footer section end here ************************************/
+
+
+
+.gallery {
+  width: 100%;
+}
+
+.gallery-container {
+  align-items: center;
+  display: flex;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 1000px;
+  position: relative;
+}
+
+.gallery-item {
+  height: 150px;
+  opacity: .4;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  width: 150px;
+  z-index: 0;
+}
+
+.gallery-item.gallery-item-selected {
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.6), 0 0 60px rgba(255, 255, 255, 0.45), 0 0 110px rgba(255, 255, 255, 0.25), 0 0 100px rgba(255, 255, 255, 0.1);
+  height: 300px;
+  opacity: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  z-index: 2;
+}
+
+.gallery-item.gallery-item-previous,
+.gallery-item.gallery-item-next {
+  height: 200px;
+  opacity: 1;
+  width: 200px;
+  z-index: 1;
+}
+
+.gallery-item.gallery-item-previous {
+  left: 30%;
+  transform: translateX(-50%);
+}
+
+.gallery-item.gallery-item-next {
+  left: 70%;
+  transform: translateX(-50%);
+}
+
+.gallery-item.gallery-item-first {
+  left: 15%;
+  transform: translateX(-50%);
+}
+
+.gallery-item.gallery-item-last {
+  left: 85%;
+  transform: translateX(-50%);
+}
+
+.gallery-controls {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.gallery-controls button {
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 20px;
+  padding: 0 12px;
+  text-transform: capitalize;
+}
+
+.gallery-controls button:focus {
+  outline: none;
+}
+
+.gallery-controls-previous {
+  position: relative;
+}
+
+.gallery-controls-previous::before {
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  content: '';
+  display: inline-block;
+  height: 4px;
+  left: -10px;
+  padding: 2px;
+  position: absolute;
+  top: 0;
+  transform: rotate(135deg) translateY(-50%);
+  transition: left 0.15s ease-in-out;
+  width: 4px;
+}
+
+.gallery-controls-previous:hover::before {
+  left: -18px;
+}
+
+.gallery-controls-next {
+  position: relative;
+}
+
+.gallery-controls-next::before {	
+  border: solid #000;
+  border-width: 0 2px 2px 0;
+  content: '';
+  display: inline-block;
+  height: 4px;
+  padding: 2px;
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  transform: rotate(-45deg) translateY(-50%);
+  transition: right 0.15s ease-in-out;
+  width: 4px;
+}
+
+.gallery-controls-next:hover::before {
+  right: -18px;
+}
+
+.gallery-nav {
+  bottom: -15px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+}
+
+.gallery-nav li {
+  background: #ccc;
+  border-radius: 50%;
+  height: 10px;
+  margin: 0 16px;
+  width: 10px;
+}
+
+.gallery-nav li.gallery-item-selected {
+  background: #555;
+}
+
+			
+
+
+
+@media (min-width: 768px) {
+
+    /* show 3 items */
+    .carouselPrograms .carousel-inner .active,
+    .carouselPrograms .carousel-inner .active + .carousel-item,
+    .carouselPrograms .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+
+    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .carouselPrograms .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+
+    .carouselPrograms .carousel-inner .carousel-item-next,
+    .carouselPrograms .carousel-inner .carousel-item-prev {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+
+    .carouselPrograms .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .carouselPrograms .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item,
+    .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .carouselPrograms .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .carouselPrograms .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .carouselPrograms .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .carouselPrograms .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
