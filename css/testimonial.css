@@ -1,0 +1,166 @@
+/*************************testimonialArea section start here **************************/
+.testimArea {
+	background:#ececec;
+	padding: 20px 0px;
+	color:#252525;
+	//float:left;
+	width:100%;
+	margin: 50px 0px 20px 0px;
+}
+/* Clear floats before the columns */
+.testimArea:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.testimArea h2 {
+  color: #0875B6;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  margin: 20px 0px 40px 0px;
+  font-style:italic;
+}
+h2::after {
+  content: "";
+  width: 150px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #0875B6;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+/*.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	margin:20px auto 20px auto;
+	padding:0px 0px;
+	position:relative;
+	//float:left;
+}
+.carousel .item {
+	color: #999;
+	font-size: 14px;
+    //text-align: center;
+	overflow: hidden;
+    min-height: 200px;
+	width: 25%;
+    float: left;
+	background:#f0f0f0;
+    border: 1px solid #ffffff;
+	padding:20px 20px;
+	margin:0px 20px 20px 20px;
+}*/
+
+.carouselItem{
+	font-size: 14px;
+    //text-align: center;
+	//overflow: hidden;
+    min-height: 200px;
+	//width: 25%;
+    //float: left;
+	background:#f0f0f0;
+    border: 1px solid #ffffff;
+	padding:20px 20px;
+	margin:50px 20px 20px 20px;
+	position:relative;
+}
+.img-box {
+	width: 100px;
+	height: 100px;
+	margin: 0px auto 0px auto;
+	padding: 5px;
+	background:#ffffff;
+	border: 1px solid #ffffff;
+	border-radius: 50%;
+	position:absolute;
+	top:-20%;
+	left:40%;
+}
+.img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+.quotat {
+	padding: 0px 0px 0px 0px;
+	font-size:50px;
+	font-family:"sogo", verdana; 
+	line-height:30px;
+	//float:left;
+}
+.quotatClose {
+	padding: 0px 0px 30px 0px;
+	font-size:50px;
+	font-family:"sogo",verdana; 
+	line-height:30px;
+}
+.testimonial {
+	padding: 20px 0 10px;
+	text-align:justified;
+}
+.testimonial .overvi {	
+	font-style: italic;
+}
+
+.testimonial .overvi b {
+	text-transform: uppercase;
+	color: #7AA641;
+}
+.starRatings i {
+	font-size: 18px;
+	color: #ffdc12;
+}
+/*.testimonial .overview {	
+	font-style: italic;
+}
+
+.testimonial .overview b {
+	text-transform: uppercase;
+	color: #7AA641;
+}
+.starRating i {
+	font-size: 18px;
+	color: #ffdc12;
+}
+.carousel .carousel-control {
+	width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    top: 50%;
+	background: none;
+}
+.carousel-control i {
+    font-size: 68px;
+	line-height: 42px;
+    position: absolute;
+    display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel .carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 10px;
+	height: 10px;
+	margin: 1px 3px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: #555;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+/*************************testimonialArea section end here ********************************/

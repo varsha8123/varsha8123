@@ -1,0 +1,160 @@
+/*************************Brochure section start here ************************************/
+
+.brochArea {
+  color:#252525;
+  width:100%;
+  display:block;
+  margin:20px 0px 20px 0px;
+  min-height:450px;
+}
+
+.brochArea h2 {
+  color: #0875B6;
+  text-align: center;
+  font-weight: bold;
+  position: relative;
+  margin: 20px 0px 40px 0px;
+  font-style:italic;
+}
+
+h2::after {
+  content: "";
+  width: 150px;
+  position: absolute;
+  margin: 0 auto;
+  height: 3px;
+  background: #0875B6;
+  left: 0;
+  right: 0;
+  bottom: -10px;
+}
+
+.brochImgArea{
+  background:#bfc93b;
+  float:left;
+  width:34.5%;
+  padding:10px 10px;
+  margin:10px 6% 20px 8%;
+}
+.brochImg{
+  background: #ffffff;
+  width: 100%;
+  height: 132px;
+  //border: 5px solid #dddcdc;
+  //box-shadow:5px 5px 15px rgba(5, 5, 5, 0.24);
+}
+.brochTitle{
+  margin-top:10px;
+  //padding:5px 0px 5px 0px;
+  font-size:14px;
+  text-align:center;
+  line-height:10px;
+}
+.brochTitle h3{
+  font-weight:bold;
+  //padding:5px 0px 5px 0px;
+  color:#ffffff;
+}
+
+/*************************Brochure section end here ************************************/
+
+/***************************News section start here ************************************/
+
+.newsWrapper {
+  width:100%;
+  display:block;
+  margin:20px 0px 20px 0px
+}
+
+.newsArea {
+  width:100%;
+  display:block;
+  margin:20px 0px 20px 0px;
+}
+
+/* Clear floats after the columns */
+.newsArea:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.newsImgArea{
+  background:#dddcdc;
+  float:left;
+  width:14%;
+  padding:5px 5px 5px 5px;
+  margin:10px 0% 10px 0%;
+}
+
+.newsImg{
+  background: #ffffff;
+  width: 100%;
+  height: 90px;
+}
+
+.newsImgBig{
+  background: #ffffff;
+  border:5px solid #dcdcdc;
+  //width: 60%;
+  margin:10px 20% 10px 20%;
+  height: 370px;
+}
+
+.newsDesc{
+  float:left;
+  padding:10px 20px;
+  width:100%;
+}
+.newsDetail{
+  float:left;
+  padding:10px 20px;
+  width:85%;
+}
+
+.newsTitle{
+  padding:5px 0px 5px 0px;
+  font-size:14px;
+  line-height:10px;
+}
+.newsTitle h3{
+  font-size:20px;
+  font-weight:bold;
+  text-decoration:underline;
+  color:#88bf40;
+}
+.newsTitle h4{
+  font-size:16px;
+  font-weight:bold;
+}
+.newsText{
+  //padding:5px 0px 5px 0px;
+  font-size:14px;
+}
+.newsText hr{
+  margin:30px 10px 10px 10px;
+  width:90%;
+  border-bottom:1px solid #88bf40;
+}
+.newsText a{
+  margin-top:10px;
+  color:#88bf40;
+}
+.newsText a:hover{
+  color:#88bf40;
+}
+.newsText ul{
+  margin:10px 0px;
+  color:#88bf40;
+}
+.newsText ul li{
+  color:#252525;
+}
+.newsDate{
+  text-align:center;
+  margin:5px 0px 5px 0px;
+}
+.newsDayDate{
+  margin:5px 0px 5px 0px;
+}
+/***************************News section end here ************************************/

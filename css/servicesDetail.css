@@ -1,0 +1,146 @@
+/*************************ServiceDetail section start here ************************************/
+
+.serviceDetArea {
+  background: #efefef url("../images/servicesBg1.jpg") center repeat-x;
+  color:#252525;
+  //float:left;
+  width:100%;
+  display:block;
+  margin:30px 0px 30px 0px;
+  padding:30px 30px 30px 30px;
+}
+
+/* Clear floats before the columns */
+.serviceDetArea:before {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.serviceDetIcon{
+  width:80px;
+  height:80px;
+  float:left;
+}
+
+.serviceDetTitle{
+  font-size:30px;
+  color:#0875b6;
+  float:left;
+  margin:10px 0px 0px 20px;
+}
+
+.serviceDetTitleP{
+  font-size:30px;
+  color:#a864a8;
+  float:left;
+  margin:10px 0px 0px 20px;
+}
+
+.serviceDetText{
+  clear:both;
+  font-size:16px;
+  margin:10px 0px 10px 0px;
+  width:100%;
+}
+
+
+/*************************marker section start here ************************************/
+
+.markerArea {
+  background: #f9fafb url("../images/services_bg1.png") center repeat-x ;
+  color:#252525;
+  width:100%;
+  display:block;
+  margin:20px 0px 20px 0px;
+  padding:20px 0px 20px 0px;
+  min-height:410px;
+}
+.markerArea1 {
+  color:#252525;
+  width:100%;
+  display:block;
+  margin:50px 0px 20px 0px;
+  min-height:450px;
+}
+.markerColWrap {
+  width:100%;
+  background: #d9d9d8;
+  padding:20px 0px 20px 0px;
+  min-height:240px;
+}
+
+/* Clear floats after the columns */
+.markerArea:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.markerCol{
+  float:left;
+  //height:300px;
+  margin:5px 5px;
+  width:17.5%;
+}
+.markerColL{
+  width:48%;
+  float:left;
+}
+
+.markerColR{
+  width:48%;
+  float:right;
+}
+
+.markerHeaderBg{
+  background:#dddcdc;
+  height:36px;
+  color:#252525;
+}
+
+.markerTitle{
+  padding:5px 20px;  
+  font-size:18px;
+}
+.markerTitle h2{
+  font-size:24px;
+}
+.markerText{
+  padding:10px 20px;
+}
+
+.markerText1 p{
+  padding:10px 10px;
+  text-align:center;
+}
+
+.markerText h3{
+  font-size:16px;
+  color:#6fc202;
+  text-decoration:underline;
+  line-height:40px;
+}
+
+.markerNo{
+  width: 50px;
+  height: 50px;
+  margin: 0px auto;
+  padding:10px 5px;
+  background:#dddcdc;
+  border-radius: 50%;
+  position:relative;
+  text-align:center;
+}
+.markerImg{
+  width: 60px;
+  height: 60px;
+  margin: 20px auto 0px auto;
+  padding: 5px;
+}
+.markerImg img {
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+
+/*************************marker section end here ************************************/

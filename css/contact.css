@@ -1,0 +1,109 @@
+
+/*************************Contact section start here ************************************/
+
+.contactArea {
+  background:#f9fafb;
+  color:#252525;
+  width:100%;
+  display:block;
+  margin:0px 0px 0px 0px;
+}
+.contactFormArea {
+  background:#f9fafb url("../images/contactBg.jpg") top repeat-x;
+  color:#252525;
+  width:100%;
+  display:block;
+  margin:0px 0px 20px 0px;
+  min-height:330px;
+}
+/* Clear floats after the columns */
+.contactArea:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contactFormArea:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.contCol{
+  width:48%;
+  float:left;
+  padding:10px 10px;
+  margin:0px 0px 0px 0px;
+}
+
+.bdrR{
+  float:left;
+  border-right:1px solid #d4d4d4;
+}
+
+.contColL{
+  width:50%;
+  float:left;
+}
+
+.contColR{
+  width:50%;
+  float:right;
+}
+
+.contTitle h2{
+  padding:0px 20px 0px 20px;  
+  font-size:24px;
+  color:#88bf40;
+  text-decoration:underline;
+}
+.contText{
+  padding:5px 20px;
+}
+
+.contText p{
+  margin:0px 0px;
+}
+.txtW{
+  margin:10px 0px;
+  width:80px;
+  float:left;
+}
+
+.contText h3{
+  font-size:18px;
+  color:#6fc202;
+  text-decoration:underline;
+  line-height:40px;
+}
+.txtG{
+  color:#88bf40;
+}
+
+.contForm{
+  width:100%;
+  float:left;
+  padding:20px 0px;
+}
+.contFormDiv{
+  width:100%;
+  float:left;
+  text-align:center;
+}
+.contForm input, .contForm textarea{
+  background:#f8f8f8;
+  border:1px solid #dddddd;
+  color:#252525;
+  padding:5px 5px;
+  width:60%;
+  margin:5px 0px;
+}
+
+.contFormBtn{
+  background:linear-gradient(#65ddff, transparent), linear-gradient(200deg, #65ddff, #ceeff8, #ceeff8);
+  border:none;
+  color:#252525;
+  padding:15px 10px;
+  width:30%;
+  font-weight:bold;
+  margin:10px 30%;
+  font-size:16px;
+}
