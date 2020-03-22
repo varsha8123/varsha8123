@@ -102,11 +102,12 @@ body {
 
 /* Add a color to the active/current link */
 
-.topnav a:active{
+.topnav a:active, .topnav a.active{
   background: #6fc202;
   padding: 20px 30px;
   color: #ffffff;
 }
+
 
 .topnav .icon {
   display: none;
